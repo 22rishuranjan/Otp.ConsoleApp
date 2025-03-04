@@ -10,3 +10,4 @@ D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\Otp.Service.dll
 D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\refint\Otp.Service.dll
 D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\Otp.Service.pdb
 D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\ref\Otp.Service.dll
+D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\Otp.Service.sourcelink.json

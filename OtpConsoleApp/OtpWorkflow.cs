@@ -1,5 +1,5 @@
-﻿using Otp.Service.Interfaces;
-using Otp.Service;
+﻿
+
 using System.Diagnostics;
 
 namespace Otp.ConsoleApp;

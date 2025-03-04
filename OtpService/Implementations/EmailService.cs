@@ -4,9 +4,7 @@ using System.Net.Mail;
 using Microsoft.Extensions.Configuration;
 using Otp.Service.Interfaces;
 
-
-
-namespace Otp.Service.Implementation;
+namespace Otp.Service;
 
 public class EmailService : IEmailService
 {
@@ -21,17 +19,22 @@ public class EmailService : IEmailService
     {
         try
         {
-            var smtpClient = new SmtpClient(_config["SMTP:Host"])
-            {
-                Port = int.Parse(_config["SMTP:Port"]),
-                Credentials = new NetworkCredential(_config["SMTP:Username"], _config["SMTP:Password"]),
-                EnableSsl = true
-            };
+            var smtpHost = _config["SMTP:Host"];
+            bool isLocalSmtp = smtpHost.Equals("localhost", StringComparison.OrdinalIgnoreCase);
+
+            using var smtpClient = isLocalSmtp
+                ? new SmtpClient("localhost") { Port = 25, EnableSsl = false }
+                : new SmtpClient(smtpHost)
+                {
+                    Port = int.Parse(_config["SMTP:Port"]),
+                    Credentials = new NetworkCredential(_config["SMTP:Username"], _config["SMTP:Password"]),
+                    EnableSsl = true
+                };
 
             var mailMessage = new MailMessage
             {
                 From = new MailAddress(_config["SMTP:Sender"]),
-                Subject = "Your OTP Code",
+                Subject = "Your Otp Code",
                 Body = body,
                 IsBodyHtml = false
             };
@@ -40,8 +43,9 @@ public class EmailService : IEmailService
             smtpClient.Send(mailMessage);
             return true;
         }
-        catch (Exception)
+        catch (Exception ex)
         {
+            Console.WriteLine($"Failed to send email: {ex.Message}");
             return false;
         }
     }

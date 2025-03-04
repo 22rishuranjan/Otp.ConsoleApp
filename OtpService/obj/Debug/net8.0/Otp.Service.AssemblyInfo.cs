@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Otp.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0840a7b71da25444a0b6b485cd5a594b8b71d25f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Otp.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Otp.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -2,8 +2,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 
-using Otp.Service.Implementation;
-using Otp.Service.Interfaces;
 using Otp.ConsoleApp;
 
 class Program
