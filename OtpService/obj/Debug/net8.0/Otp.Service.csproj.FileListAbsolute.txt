@@ -1,0 +1,12 @@
+D:\Dev\.net\OtpConsoleApp\OtpService\bin\Debug\net8.0\Otp.Service.deps.json
+D:\Dev\.net\OtpConsoleApp\OtpService\bin\Debug\net8.0\Otp.Service.dll
+D:\Dev\.net\OtpConsoleApp\OtpService\bin\Debug\net8.0\Otp.Service.pdb
+D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\Otp.Service.csproj.AssemblyReference.cache
+D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\Otp.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\Otp.Service.AssemblyInfoInputs.cache
+D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\Otp.Service.AssemblyInfo.cs
+D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\Otp.Service.csproj.CoreCompileInputs.cache
+D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\Otp.Service.dll
+D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\refint\Otp.Service.dll
+D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\Otp.Service.pdb
+D:\Dev\.net\OtpConsoleApp\OtpService\obj\Debug\net8.0\ref\Otp.Service.dll
