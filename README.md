@@ -1,9 +1,9 @@
 # Otp Console Application
 
-## 📚 Overview
-The **Otp Console Application** is a .NET Core project that generates One-Time Passwords (Otp), validates emails, and sends Otp codes via email using SMTP. It follows **dependency injection (DI)** principles for loose coupling and modular design.
+## Overview
+The Otp Console Application is a .NET Core project that generates One-Time Passwords (Otp), validates emails, and sends Otp codes via email using SMTP. It follows dependency injection (DI) principles for loose coupling and modular design.
 
-## 🏰️ Project Structure
+## Project Structure
 ```
 OtpVerificationSystem/
 │-- OtpServiceLib/       (Class Library - Handles Otp logic)
@@ -17,69 +17,64 @@ OtpVerificationSystem/
 │-- README.md            (Project Documentation)
 ```
 
----
+## Features
+- Otp Generation & Validation  
+- SMTP Email Sending  
+- Configurable via `appsettings.json`  
+- Dependency Injection (DI) for Loose Coupling  
+- Retry & Timeout for Otp Entry  
+- Supports Local SMTP Testing with Papercut  
 
-## 📌 Features
-✅ **Otp Generation & Validation**  
-✅ **SMTP Email Sending**  
-✅ **Configurable via `appsettings.json`**  
-✅ **Dependency Injection (DI) for Loose Coupling**  
-✅ **Retry & Timeout for Otp Entry**  
+## Setup & Installation
 
----
-
-## 🔧 Setup & Installation
-
-### **1️⃣ Prerequisites**
+### Prerequisites
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) installed
 - An SMTP server (Gmail, Outlook, or a custom SMTP provider)
-- Ensure **`appsettings.json`** is correctly placed in the project
+- Ensure `appsettings.json` is correctly placed in the project
+- Optional: [Papercut SMTP](https://github.com/ChangemakerStudios/Papercut-SMTP) for local email testing
 
-### **2️⃣ Clone the Repository**
+### Clone the Repository
 ```sh
 git clone https://github.com/your-repo/OtpConsoleApp.git
 cd OtpConsoleApp
 ```
 
-### **3️⃣ Build the Project**
+### Build the Project
 ```sh
 dotnet build
 ```
 
-### **4️⃣ Run the Application**
+### Run the Application
 ```sh
 dotnet run --project OtpConsoleApp
 ```
 
----
-
-## 📁 Configuration (`appsettings.json`)
+## Configuration (`appsettings.json`)
 
 Modify the SMTP settings in `appsettings.json`:
 ```json
 {
   "SMTP": {
-    "Host": "smtp.your-email-provider.com",
-    "Port": "587",
+    "Host": "localhost", // Change to "smtp.your-email-provider.com" for production
+    "Port": "25", // Papercut default port (for local testing)
     "Username": "your-email@example.com",
     "Password": "your-email-password",
     "Sender": "your-email@example.com"
   }
 }
 ```
----
 
-## 🖥️ How to Use
+### Using Papercut for Local Testing
+- Download & Install [Papercut SMTP](https://github.com/ChangemakerStudios/Papercut-SMTP)
+- Set `Host` to `localhost` and `Port` to `25` in `appsettings.json`
+- Run the application and open Papercut to view incoming emails
 
-1️⃣ **Enter your email** (must be `@dso.org.sg` domain).  
-2️⃣ The application **generates & sends** an Otp.  
-3️⃣ Enter the received Otp.  
-4️⃣ If valid, it confirms **"Otp validated successfully!"**.  
-5️⃣ If incorrect, it allows **up to 10 attempts** before failure.  
+## How to Use
+
+1. Enter your email (must be `@dso.org.sg` domain).  
+2. The application generates & sends an Otp.  
+3. Enter the received Otp.  
+4. If valid, it confirms "Otp validated successfully!".  
+5. If incorrect, it allows up to 10 attempts before failure.  
 
 
-
-## 🧪 Running Unit Tests
-Run the test cases using `xUnit`:
-```sh
-dot test run
