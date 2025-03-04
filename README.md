@@ -37,7 +37,7 @@ OtpConsoleApp/
 
 ### Clone the Repository
 ```sh
-git clone https://github.com/your-repo/OtpConsoleApp.git
+git clone  https://github.com/22rishuranjan/Otp.ConsoleApp.git
 cd OtpConsoleApp
 ```
 
