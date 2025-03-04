@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otp.ConsoleApp", "Otp.ConsoleApp.csproj", "{55D21269-A017-40FE-BA23-A5CB803D92D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otp.ConsoleApp", "src\Otp.ConsoleApp\Otp.ConsoleApp.csproj", "{55D21269-A017-40FE-BA23-A5CB803D92D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otp.Service", "..\OtpService\Otp.Service.csproj", "{8A113C46-11FB-4137-A493-50C5804ABF89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otp.Service", "src\Otp.Service\Otp.Service.csproj", "{8A113C46-11FB-4137-A493-50C5804ABF89}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject

@@ -5,16 +5,18 @@ The Otp Console Application is a .NET Core project that generates One-Time Passw
 
 ## Project Structure
 ```
-OtpVerificationSystem/
-│-- OtpServiceLib/       (Class Library - Handles Otp logic)
-│   │-- Interfaces/      (Dependency Injection Interfaces)
-│   │-- Services/        (Service Implementations)
-│-- OtpConsoleApp/       (Console App using the Otp Service)
-│   │-- Program.cs       (Entry Point - sets up DI)
-│   │-- OtpWorkflow.cs   (Handles generic Otp steps)
-│   │-- UserOtpHandler.cs (Handles user-specific logic)
-│-- appsettings.json     (Configuration for SMTP)
-│-- README.md            (Project Documentation)
+OtpConsoleApp/
+│-- solution/             (Solution folder)
+│-- src/                  (Source folder containing projects)
+│   │-- Otp.Service/    (Class Library - Handles Otp logic)
+│   │   │-- Interfaces/   (Dependency Injection Interfaces)
+│   │   │-- Services/     (Service Implementations)
+│   │-- Otp.ConsoleApp/    (Console App using the Otp Service)
+│   │   │-- Program.cs    (Entry Point - sets up DI)
+│   │   │-- OtpWorkflow.cs (Handles generic Otp steps)
+│   │   │-- UserOtpHandler.cs (Handles user-specific logic)
+│-- appsettings.json      (Configuration for SMTP)
+│-- README.md             (Project Documentation)
 ```
 
 ## Features

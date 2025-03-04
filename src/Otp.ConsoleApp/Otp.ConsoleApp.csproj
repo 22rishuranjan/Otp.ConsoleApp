@@ -7,10 +7,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\OtpService\Otp.Service.csproj" />
-  </ItemGroup>
-
 	<ItemGroup>
 		<None Update="appsettings.json">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -24,6 +20,11 @@
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.2" />
 		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.2" />
 		<PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.2" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Otp.Service\Otp.Service.csproj" />
 	</ItemGroup>
 
 </Project>
